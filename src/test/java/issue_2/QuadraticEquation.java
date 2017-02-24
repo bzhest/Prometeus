@@ -6,29 +6,35 @@ package issue_2;
 public class QuadraticEquation {
 
     public static void main(String[] args) {
-        double a = 3;
-        double b = 2.5;
-        double c = -0.5;
-        int d;
+        double a = 0;
+        double b = 10;
+        double c = 0;
+        double discremenant;
         //дискреминант
-        d = (int)((b*b) - (4 *a*c));
-        if(d>0){
+        discremenant = b*b - 4*a*c;
+        if(discremenant>0){
             double x1;
             double x2;
-            x1 = (-b+Math.sqrt(b*b-4*a*c))/2*a;
-            x2 = (-b-Math.sqrt(b*b-4*a*c))/2*a;
+            x1 = (-b+Math.sqrt(discremenant))/(2*a);
+            x2 = (-b-Math.sqrt(discremenant))/(2*a);
+            System.out.println (x1);
+            System.out.println (x2);
         }
-        else if (d==0){
+        else if (discremenant==0){
             double x1;
             double x2;
-            x1=-b/2*a;
-            x2=-b/2*a;
+            x1=-b/(2*a);
+            x2=-b/(2*a);
+            System.out.println (x1);
+            System.out.println (x2);
         }
         else {
-            x1 = "";
-            x2 = "";
+            String x1 = "";
+            String x2 = "";
+            System.out.println (x1);
+            System.out.println (x2);
         }
-
+        System.out.println (discremenant);
 
 
         //PUT YOUR CODE HERE

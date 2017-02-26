@@ -7,9 +7,10 @@ public class SquareRoot {
 
     public static void main(String[] args) {
         double a = 3;
-        double b = -18;
-        double c = 27;
+        double b = 2.5;
+        double c = -0.5;
         double discriminant;
+        
 
         discriminant = b*b - 4*a*c;
         if(discriminant>0 && a!=0){

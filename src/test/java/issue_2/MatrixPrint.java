@@ -13,7 +13,12 @@ public class MatrixPrint {
                 anArray[i][j] = count+1;
                     if(anArray[i][j] == 1 ||anArray[i][j] == 5 ||anArray[i][j] == 7 ||anArray[i][j] == 9 ||anArray[i][j] == 13 ||anArray[i][j] == 17 ||anArray[i][j] == 19 ||anArray[i][j] == 21 ||anArray[i][j] == 25){
                         System.out.print(" " + "*" + " ");
-                    }else {
+
+                    }else if(anArray[i][j] == 10||anArray[i][j] == 11||anArray[i][j] == 12||anArray[i][j] == 14||anArray[i][j] == 15||anArray[i][j] == 16||anArray[i][j] == 18||anArray[i][j] == 20||anArray[i][j] == 22||anArray[i][j] == 23||anArray[i][j] == 24){
+                        System.out.print(anArray[i][j] + " ");
+
+                    }
+                    else {
                         System.out.print(" " + anArray[i][j] + " ");
                     }
                 count++;
